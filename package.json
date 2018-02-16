@@ -19,11 +19,14 @@
     "url": "https://github.com/reactioncommerce/reaction/issues"
   },
   "dependencies": {
+    "@reactioncommerce/job-queue": "^1.0.4",
     "@babel/runtime": "7.0.0-beta.38",
+    "@reactioncommerce/file-collections": "0.1.1",
+    "@reactioncommerce/file-collections-sa-gridfs": "0.0.0",
     "@reactioncommerce/nodemailer": "^5.0.5",
     "accounting-js": "^1.1.1",
     "authorize-net": "^1.1.1",
-    "autoprefixer": "^8.0.0",
+    "autoprefixer": "^7.2.5",
     "autosize": "^4.0.0",
     "body-parser": "^1.18.2",
     "bootstrap": "^3.3.7",
@@ -41,6 +44,7 @@
     "deep-equal": "^1.0.1",
     "dnd-core": "^2.5.4",
     "escape-string-regexp": "^1.0.5",
+    "eslint-config-react-tools": "^1.1.2",
     "eslint-import-resolver-meteor": "^0.4.0",
     "faker": "^4.1.0",
     "fibers": "^2.0.0",
@@ -122,6 +126,7 @@
     "velocity-react": "^1.3.3"
   },
   "devDependencies": {
+    "@reactioncommerce/eslint-config": "^1.0.1",
     "@babel/cli": "7.0.0-beta.38",
     "@babel/core": "7.0.0-beta.38",
     "@babel/preset-react": "7.0.0-beta.38",
@@ -188,10 +193,6 @@
           }
         }
       ]
-    ],
-    "presets": [
-      "meteor",
-      "@babel/preset-react"
     ]
   },
   "jest": {

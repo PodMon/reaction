@@ -4,7 +4,7 @@ import { Roles } from "meteor/alanning:roles";
 import { Random } from "meteor/random";
 import { check, Match } from "meteor/check";
 import { HTTP } from "meteor/http";
-import { Job } from "meteor/vsivsi:job-collection";
+import { Job } from "/imports/plugins/core/job-collection/lib";
 import { GeoCoder, Hooks, Logger } from "/server/api";
 import { Reaction } from "/lib/api";
 import * as Collections from "/lib/collections";
@@ -876,7 +876,7 @@ Meteor.methods({
     if (shopWithBrandAsset) {
       return Collections.Shops.update({
         "_id": Reaction.getShopId(),
-        "brandAssets.type": "navbarBrandImage"
+        "brandAssets.type": asset.type
       }, {
         $set: {
           "brandAssets.$": {
